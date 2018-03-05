@@ -1,0 +1,365 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: 'Lato', sans-serif;
+     background-color: #F1F3F5;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+	width: 960px;
+	margin: auto;
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+
+
+
+header, footer{
+  height: 50px;
+  width: 95%;
+  clear: both;
+  background-color: white;
+  margin-left: 40px;
+  padding-top: 1px;
+}
+header nav ul{
+  list-style: none;
+}
+header nav ul li{
+  float: left;
+  margin-right: 8.4%;
+  font-size: 14px;
+}
+section.top{
+  width: 30%;
+}
+section.hero{
+  width: 100%;
+  background-image: url(../img/lady.jpg);
+  background-size: 22%;
+  background-position: 90% bottom;
+  background-repeat: no-repeat;
+  padding: 3% 0 4% 3%;
+}
+section.hero img{
+  width: 200px;
+  margin: 0 auto;
+  display: block;
+}
+img + p{
+  font-size: 20px;
+}
+img + p + p {
+  font-size: 16px;
+}
+section.info{
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 22px;
+}
+span.s1{
+  border: 1px solid #FFDDF0;
+  width: 10px;
+  height: 1px;
+}
+section.mid{
+  float: left;
+  width: 90%;
+  background-color: white;
+  margin-left: 60px;
+  padding-bottom: 50px;
+  margin-left: 60px;
+}
+.info p{
+  font-size: 16px;
+  float: left;
+  width: 390px;
+  text-align: left;
+}
+.info > span + p{
+  margin-right: 18px;
+}
+.info > p + p + p{
+  text-align: center;
+  width: 810px;
+  font-style: italic;
+  color: gray;
+}
+section.bottom{
+  background-color: #F1F3F5;
+  float: left;
+  width: 100%;
+}
+.bottom article{
+  width: 500px;
+  font-size: 14px;
+  float: left;
+  margin-left: 80px;
+}
+.bottom section{
+  float: left;
+  width: 695px;
+}
+.bottom section img{
+  width: 300px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 30px;
+}
+.bottom section span{
+  color: gray;
+  font-style: italic;
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+}
+.last{
+  float: left;
+  width: 90%;
+  background-color: white;
+  margin-left: 70px;
+  padding-bottom: 50px;
+}
+.bord {
+  border: 1px solid #F1F3F5;
+  float: left;
+  width: 1100px;
+  margin-left: 50px;
+  padding: 50px 0;
+}
+section.last > h1 {
+  text-align: center;
+}
+.last h1:nth-of-type(2){
+  float: left;
+  width: 380px;
+}
+.last section img{
+  float: left;
+  padding: 0 50px;
+}
+.last p{
+  float: left;
+  width: 640px;
+  font-size: 14px;
+}
+.last > section + section{
+  float: left;
+  width: 1150px;
+}
+.goal{
+  float: left;
+  margin-left: 100px;
+}
+.goal p{
+  width: 445px;
+  float: left;
+}
+footer{
+  height: 200px;
+  width: 100%;
+  color: white;
+}
+.ft{
+  background-color: #B8C5D0;
+  float: left;
+  width: 100%;
+  height: 50px;
+}
+footer span{
+  font-size: 20px;
+  float: left;
+  margin-left: 220px;
+  padding-top: 10px;
+}
+.email{
+  padding: 5px 60px 5px 5px;
+  margin-left: 200px;
+  margin-top: 7px;
+}
+.submit{
+  margin-left: 10px;
+}
+.fb{
+  float: left;
+  width: 100%;
+  background-color: #8F9CA3;
+}
+.bold{
+  font-weight: bold;
+}
+.fb ul{
+  list-style: none;
+}
+.fb ul li{
+  padding-left: 10px;
+  font-size: 14px
+}
+.tl li{
+  float: left;
+}
+.fs{
+  border-top: 1px solid white;
+  padding-top: 0px;
+  margin-top: 20px;
+  width: 905px;
+  margin-right: 220px;
+}
+ul.bl{
+  float: left;
+}
+ul.tl li:nth-of-type(1), ul.tl li:nth-of-type(2), span + ul.bl, .contact li:nth-of-type(1){
+  margin-left: 170px;
+}
+.contact li{
+  float: left;
+}
+@media only screen and (max-width: 740px){
+  header li:nth-of-type(2),
+  header li:nth-of-type(3),
+  header li:nth-of-type(4),
+  header li:nth-of-type(5),
+  header li:nth-of-type(6){
+  display: none;
+    }
+    header,
+    .bottom article,
+    .bord,
+    .goal,
+      .last section:nth-of-type(2),
+      .tl li:nth-of-type(1){
+      width: 90%;
+    }
+  section.hero{
+    background: none;
+  }
+  section.top,
+  section.info,
+  .info p,
+  .info p:nth-of-type(3),
+  .bottom section,
+  .last,
+  .last p,
+  section.visit{
+    width: 100%;
+  }
+  header li{
+    width: 24%;
+  }
+  section.mid,
+  .bottom article,
+  .last,
+  header,
+  .bord,
+  .goal,
+  footer span,
+  .email,
+  .submit,
+  footer,
+  .tl li:nth-of-type(1){
+    margin-left: 5%;
+  }
+  section.info,
+  .info p{
+    font-size: 14px;
+  }
+  .bord h1,
+  .goal h1{
+    float: none;
+    text-align: center;
+  }
+  .last section img{
+    padding-bottom: 20px;
+  }
+  section.ft{
+    height: 150px;
+  }
+  .email{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  .tl li:nth-of-type(1){
+    margin-left: 0;
+    text-align: center;
+    padding-left: 0;
+  }
+  .tl li:nth-of-type(2){
+    padding-left: 40px;
+  }
+  .fs{
+    width: 80%;
+  }
+  ul.tl li:nth-of-type(1),
+  ul.tl li:nth-of-type(2),
+  span + ul.bl,
+  .contact li:nth-of-type(1){
+    margin-left: 0;
+  }
+  ul.contact{
+    float: left;
+  }
+  .contact li,
+  section.visit{
+    float: none;
+  }
+}
